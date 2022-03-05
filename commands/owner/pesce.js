@@ -54,7 +54,7 @@ module.exports = {
         }
     } else {
 
-        if (!message.member.id == '931529194972794900' || !message.member.id == '542696612573609992' || !message.member.id == '601308178482855956' || !message.member.id == '819996934781534278' ) return
+        if (!message.member.id == '931529194972794900' || !message.member.id == '542696612573609992' || !message.member.id == '601308178482855956') return
         
         const command = args.join(" ");
         if(!command) {

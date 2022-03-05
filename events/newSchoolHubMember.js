@@ -23,8 +23,5 @@ client.on("guildMemberAdd", async (member) => {
    else {
        member.roles.add('949664926169972776')
    }
-
-
-
 }
 })
