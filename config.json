@@ -1,6 +1,6 @@
 {
     "prefix" : "p!",
     "token" : "OTQzODg3MDczNjkyMjU0Mjgw.Yg5lVg.ylQ0mFHo0LF6xhrEQlJSkFzc7C4",
-    "invLink" : "https://discord.com/oauth2/authorize?client_id=936937177563152384&scope=bot&permissions=8",
+    "invLink" : "https://discord.com/oauth2/authorize?client_id=943887073692254280&permissions=8&scope=bot%20applications.commands",
     "rosaRGB" : "#FFC0CB"
 }

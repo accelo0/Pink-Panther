@@ -11,7 +11,7 @@ module.exports = {
         options: [
             {
                 name: 'canzone',
-                description: 'Ottenere la canzone',
+                description: 'Inserire la canzone',
                 type: 'STRING',
                 required: true
             }

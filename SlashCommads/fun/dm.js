@@ -8,13 +8,13 @@ module.exports = {
         options: [
             {
                 name: 'utente',
-                description: 'Ottenre l\'utente',
+                description: 'Inserire l\'utente',
                 type: 'USER',
                 required: true
             },
             {
                 name: 'testo',
-                description: 'Il testo da inviare',
+                description: 'Inserire il testo da inviare',
                 type: 'STRING',
                 required: true
             }

@@ -8,7 +8,7 @@ module.exports = {
         options: [
             {
                 name: 'utente',
-                description: 'Ottenere l\'utente',
+                description: 'Inserire l\'utente',
                 type: 'USER',
                 required: true
             }

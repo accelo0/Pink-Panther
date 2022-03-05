@@ -8,7 +8,7 @@ module.exports = {
         options: [
             {
                 name: 'testo',
-                description: 'Il testo da ripetere',
+                description: 'Inserire il testo da ripetere',
                 type: 'STRING',
                 required: true
             }

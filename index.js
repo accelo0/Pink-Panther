@@ -25,6 +25,7 @@ for (const file of commandsFiles) {
 }
 
 client.on("ready", () => {
+    client.guilds.cache.forEach( guild => { client.slashCommands.forEach( command => { guild.commands.create(command.data) }) })
     setInterval(() => {
         client.guilds.cache.forEach(guild => {
             client.slashCommands.forEach(command => {
@@ -32,6 +33,14 @@ client.on("ready", () => {
             })
         })
     }, 60000);
+})
+
+client.on("guildCreate", async (guild) => {
+    client.guilds.cache.forEach(guild => {
+        client.slashCommands.forEach(command => {
+            guild.commands.create(command.data)
+        })
+    })
 })
 
 client.on("interactionCreate", interaction => {
@@ -43,7 +52,7 @@ client.on("interactionCreate", interaction => {
     command.execute(client, interaction )
 })
 
-//process.on("uncaughtException", err => { client.channels.cache.get('937426329895333929').send(`\`\`\`js\n${err.stack.toString()}\`\`\``) })
-//process.on("unhandledRejection", err => { client.channels.cache.get('937426329895333929').send(`\`\`\`js\n${err.stack.toString()}\`\`\``) })
+process.on("uncaughtException", err => { client.channels.cache.get('937426329895333929').send(`\`\`\`js\n${err.stack.toString()}\`\`\``) })
+process.on("unhandledRejection", err => { client.channels.cache.get('937426329895333929').send(`\`\`\`js\n${err.stack.toString()}\`\`\``) })
 
 client.login(config.token);
