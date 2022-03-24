@@ -52,7 +52,7 @@ client.on("interactionCreate", interaction => {
     command.execute(client, interaction )
 })
 
-process.on("uncaughtException", err => { client.channels.cache.get('937426329895333929').send(`\`\`\`js\n${err.stack.toString()}\`\`\``) })
-process.on("unhandledRejection", err => { client.channels.cache.get('937426329895333929').send(`\`\`\`js\n${err.stack.toString()}\`\`\``) })
+process.on("uncaughtException", err => { client.channels.cache.get('956522573238243358').send(`\`\`\`js\n${err.stack.toString()}\`\`\``) })
+process.on("unhandledRejection", err => { client.channels.cache.get('956522573238243358').send(`\`\`\`js\n${err.stack.toString()}\`\`\``) })
 
 client.login(config.token);
